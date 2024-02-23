@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*POPPINS START*/
+@font-face {
+    font-family: 'Poppins';
+    src: url(assets/fonts/Poppins/Poppins-Black.ttf) format('truetype');
+    font-weight: 900; 
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(assets/fonts/Poppins/Poppins-Bold.ttf) format('truetype');
+    font-weight: bold; 
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(assets/fonts/Poppins/Poppins-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/*POPPINS END*/
+/*Kaushan-script START*/
+@font-face {
+    font-family: Kaushan;
+    src: url(assets/fonts/Kaushan_Script/KaushanScript-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/*Kaushan-script END*/
+:root{
+    --bgclr-dark:#101004;
+    --bgclr-light: #f5f6fa;
+    /*Color for text and icons*/
+    --fontclr-light:#0e1220;
+    --fontclr-dark:#dfe3f1;
+    --fontclr-transpa: rgba(0,0,0,0);
+    --primary-light:#20316a;
+    --primary-dark:#95a6df;
+    --items-hoverclr:rgba(251, 251, 239, 0.5);
+    --primary-lightshd:rgba(32, 49, 106, 0.5);
+    --secondary-light:rgba(116, 141, 220, 0.3);
+    --secondary-dark:#233b8b;
+    --secondary-darkshd: rgba(35, 59, 139, 0.3);
+    /*FONT STYLES*/
+    --font-style:'Poppins', Arial, sans-serif;
+    --font-h1: 25px;
+    --font-h2: 15px;
+    --font-li: 20px;
+}
+body{
+    background: var(--bgclr-light);
+}

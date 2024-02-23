@@ -1,0 +1,23 @@
+.container{
+    width: 50vw;
+    height: 100vh;
+    font-family: var(--font-style);
+    padding: 4vw;
+    margin-left: 50vw;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    font-size: var(--font-h1);
+    color: var(--fontclr-light);
+}
+.container p{
+    font-size: var(--font-h2);
+}
+.section{
+    border-left: solid 2px var(--fontclr-light);
+    padding-left: 10px;
+}
+/*.section:hover{
+    transform: scale(1.1);
+    background-color: var(--items-hoverclr);
+}*/

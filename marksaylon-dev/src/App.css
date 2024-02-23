@@ -1,0 +1,19 @@
+.appBackground{
+  background: var(--bgclr-light);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  /*border: solid 1 var(--bgclr-dark);*/
+}
+.screenBorder{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:var(--clr-dark);
+  height: 100vh;
+  width: 100vw;
+}
+body::-webkit-scrollbar{
+  display: none;
+}
