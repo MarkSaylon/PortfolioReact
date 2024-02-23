@@ -1,5 +1,6 @@
 import styles from './Items.module.css'
 import SkillsList from './Skills/SkillsList';
+import profile from './profile.jpg'
 
 function Items(){
     console.log("hello")
@@ -16,6 +17,11 @@ function Items(){
     
     return(
         <div className={styles.container}>
+            <div className={styles.imagecontainer}>
+                <div className={styles.circle}>
+                    <img className={styles.photo} src={profile} alt="" />
+                </div>
+            </div>
             <section className={styles.section}>
                 <h1>About me</h1>
                 <p>Back in 2021, I worked as a free lance ghost writer and while I was already studying computer engineering I only really got interested in programming when I got to work with front end developers. I only provided SEO for the sites that they were building but seeing them have fun made me see the near endless possibilities programming can offer<br/><br/>Around 2022, I dabbled in game development using Pygame, which taught me a lot of OOP concepts. Then in 2023, I worked on a college level thesis that involved programming. Neither really had anything to do with UI but they taught me how to think like a programmer. Mid 2023 was when I found my first experience related to web development, I was an UI/UX intern for LEENtech and during my stay there I learned different technologies used to design and deploy front end websites. Now, my main focus is to continuously improve on my current front end skills and learn even more new technologies. <br/><br/>Whenever, I am not on my computer my hobbies mostly include hanging out with friends, random walks, and reading books.</p>
