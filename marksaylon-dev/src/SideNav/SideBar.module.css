@@ -1,131 +1,156 @@
-.container{
-    width: 50vw;
-    height: 100vh;
-    overflow: hidden !important;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    position: fixed;
-    background: url(BG.svg) no-repeat center/cover var(--bgclr-dark);
-    transition: width 0.5s linear, text-align 0.5s linear;
+.container {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background: url(BG.svg) no-repeat center/cover var(--bgclr-dark);
+  transition: width 0.5s linear, text-align 0.5s linear;
 }
-.containerStart{
+@media (max-width: 768px) {
+  .container {
     width: 100vw;
-    text-align: center;
-    height: 100vh;
-    overflow: hidden !important;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    position: fixed;
-    background: url(BG.svg) no-repeat center/cover var(--bgclr-dark);
-    transition: width 0.5s linear, text-align 0.5s linear;
-}
-.beforeScroll{
-   
-    color: var(--bgclr-dark);
-    opacity: 0;
-    height: 0;
+    background: var(--bgclr-dark);
+    transition: none;
+    position: relative;
+  }
+  .containerStart {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
+    background: var(--bgclr-dark);
+    transition: none;
+    position: relative;
+  }
+}
+
+.containerStart {
+  width: 100vw;
+  text-align: center;
+  height: 100vh;
+  overflow: hidden !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: fixed;
+  background: url(BG.svg) no-repeat center/cover var(--bgclr-dark);
+  transition: width 0.5s linear, text-align 0.5s linear;
+}
+.beforeScroll {
+  color: var(--bgclr-dark);
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
 }
 .container .introduction p,
 .container .introduction .contactContainer,
-.container .introduction .navButtons{
-   transition: opacity 5s ease, height 0.5s ease;
+.container .introduction .navButtons {
+  transition: opacity 5s ease, height 0.5s ease;
 }
-.introBS{
-    font-family: var(--font-style);
-    font-size: var(--font-h1);
-    width: 40vw;
-    color: var(--fontclr-dark);
-    width: 100vw;
+.introBS {
+  font-family: var(--font-style);
+  font-size: var(--font-h1);
+  width: 40vw;
+  color: var(--fontclr-dark);
+  width: 100vw;
 }
-.nameStart{
-    font-size: 100px;
+.nameStart {
+  font-size: 100px;
 }
-.descStart{
-    font-size: 40px;
+.descStart {
+  font-size: 40px;
 }
-.introduction{
-    font-family: var(--font-style);
-    font-size: var(--font-h1);
-    width: 40vw;
-    color: var(--fontclr-dark);
-    transition: text-align 0.5s ease, font-size 0.5s ease, width 0.5s ease;
+.introduction {
+  font-family: var(--font-style);
+  font-size: var(--font-h1);
+  width: 40vw;
+  color: var(--fontclr-dark);
+  transition: text-align 0.5s ease, font-size 0.5s ease, width 0.5s ease;
 }
-.name{
-    color: var(--fontclr-dark);
-    display: block;
+.name {
+  color: var(--fontclr-dark);
+  display: block;
 }
-.contactContainer{
-    display: flex;
-    margin-top: 10px;
-    gap: 2vw;
-    padding-bottom: 10px;
+.contactContainer {
+  display: flex;
+  margin-top: 10px;
+  gap: 2vw;
+  padding-bottom: 10px;
 }
-.contactButton, .resumeButton{
-    height: 50px;
-    width: 150px;
-    font-family: var(--font-style);
-    border: none;
-    border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.contactButton,
+.resumeButton {
+  height: 50px;
+  width: 150px;
+  font-family: var(--font-style);
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.contactButton:hover, .resumeButton:hover{
-    transform: scale(1.1);
-    box-shadow: 0 0 5px 2px var(--primary-lightshd);
+.contactButton:hover,
+.resumeButton:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 5px 2px var(--primary-lightshd);
 }
-.contactButton{
-    background: var(--primary-dark);
-    color: var(--bgclr-dark);
+.contactButton {
+  background: var(--primary-dark);
+  color: var(--bgclr-dark);
 }
-.resumeButton{
-    background: var(--secondary-dark);
-    color: var(--fontclr-light);
+.resumeButton {
+  background: var(--secondary-dark);
+  color: var(--fontclr-light);
 }
-.navButtons{
-    text-decoration: none;
-    list-style-type: none;
+.navButtons {
+  text-decoration: none;
+  list-style-type: none;
 }
 .navButtons li {
-    cursor: pointer;
-    font-size: var(--font-li);
-    width: fit-content;
-    color: var(--fontclr-dark);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 5px;
-    transition: gap 0.5s ease;
+  cursor: pointer;
+  font-size: var(--font-li);
+  width: fit-content;
+  color: var(--fontclr-dark);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  transition: gap 0.5s ease;
 }
-.navButtons li:hover{
-    
-    gap: 10px;
+.navButtons li:hover {
+  gap: 10px;
 }
-.navButtons li:hover .bullet{
-    transform: scale(1.3);
-    rotate: 45deg;
+.navButtons li:hover .bullet {
+  transform: scale(1.3);
+  rotate: 45deg;
 }
-.bullet{
-    height: 7px;
-    width: 7px;
-    border: solid 1px var(--fontclr-dark);
-    transition: transform 0.5s ease, rotate 0.3s ease;
+.bullet {
+  height: 7px;
+  width: 7px;
+  border: solid 1px var(--fontclr-dark);
+  transition: transform 0.5s ease, rotate 0.3s ease;
 }
-.socials{
-    position: absolute;
-    bottom: 10px;
-    left: 70px;
-    display: flex;
-    width: 200px;
-    gap: 20px;
+.socials {
+  position: absolute;
+  bottom: 10px;
+  left: 70px;
+  display: flex;
+  width: 200px;
+  gap: 20px;
 }
-.socialButton{
-    width: 30px;
-    height: 30px;
-    cursor:pointer;
+.socialButton {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
 }

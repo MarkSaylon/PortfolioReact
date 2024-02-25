@@ -1,4 +1,4 @@
-.appBackground{
+.appBackground {
   background: var(--bgclr-light);
   width: 100vw;
   height: 100vh;
@@ -6,14 +6,24 @@
   flex-direction: row;
   /*border: solid 1 var(--bgclr-dark);*/
 }
-.screenBorder{
+@media (max-width: 768px) {
+  .appBackground {
+    background: var(--bgclr-light);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /*border: solid 1 var(--bgclr-dark);*/
+  }
+}
+.screenBorder {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color:var(--clr-dark);
+  background-color: var(--clr-dark);
   height: 100vh;
   width: 100vw;
 }
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
   display: none;
 }

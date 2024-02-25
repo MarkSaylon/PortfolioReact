@@ -1,43 +1,57 @@
-.container{
-    width: 50vw;
-    height: 100vh;
+.container {
+  width: 50vw;
+  height: 100vh;
+  font-family: var(--font-style);
+  padding: 4vw;
+  margin-left: 50vw;
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+  padding-top: 25vh;
+  font-size: var(--font-h1);
+  color: var(--fontclr-light);
+}
+@media (max-width: 768px) {
+  .container {
+    width: 100vw;
     font-family: var(--font-style);
     padding: 4vw;
-    margin-left: 50vw;
     display: flex;
     flex-direction: column;
     gap: 5vh;
-    padding-top: 25vh;
     font-size: var(--font-h1);
     color: var(--fontclr-light);
+    height: auto;
+    margin-left: 0;
+  }
 }
-.container p{
-    font-size: var(--font-h2);
+.container p {
+  font-size: var(--font-h2);
 }
-.section{
-    border-left: solid 2px var(--fontclr-light);
-    padding-left: 10px;
+.section {
+  border-left: solid 2px var(--fontclr-light);
+  padding-left: 10px;
 }
-.photo{
-    border-radius: 50%;
-    width: 400px;
-    height: 400px;
-    object-fit: cover;
-    object-position: top;
+.photo {
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  object-position: top;
 }
-.imagecontainer{
-    padding: 5vw;
-    padding-top: 5vh;
-    height: 1000px;
+.imagecontainer {
+  padding: 5vw;
+  padding-top: 5vh;
+  height: 1000px;
 }
-.circle{
-    border: solid 3px var(--fontclr-light);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 500px;
-    width: 500px;
-    border-radius: 50%;
+.circle {
+  border: solid 3px var(--fontclr-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
 }
 /*.section:hover{
     transform: scale(1.1);
