@@ -20,7 +20,7 @@
     overflow: hidden;
     background: var(--bgclr-dark);
     transition: none;
-    position: relative;
+    position: static;
   }
   .containerStart {
     width: 100vw;
@@ -95,6 +95,8 @@
 .resumeButton {
   height: 50px;
   width: 150px;
+  text-decoration: none;
+  text-align: center;
   font-family: var(--font-style);
   border: none;
   border-radius: 10px;

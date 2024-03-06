@@ -1,6 +1,7 @@
 import styles from './Items.module.css'
 import SkillsList from './Skills/SkillsList';
 import profile from './profile.jpg'
+import ContactMe from './ContactMe/ContactMe';
 
 function Items(){
     console.log("hello")
@@ -11,8 +12,8 @@ function Items(){
                     {id:5 ,name :'Adobe Photoshop',prof :'Advanced', desc:'Used to edit photos.'},
                     {id:6 ,name :'JavaScript',prof :'Intermediate', desc:'Used for the interactivity and functionality of the site.'},
                     {id:7 ,name :'ReactJS',prof :'Beginner', desc:'A commonly used JS library for creating web apps.'},
-                    {id:8 ,name :'php',prof :'Learning', desc:'Used for server-side scripting.'},
-                    {id:9 ,name :'MySQL',prof :'Learning', desc:'Used for database management.'}];
+                    {id:8 ,name :'php',prof :'Beginner', desc:'Used for server-side scripting.'},
+                    {id:9 ,name :'MySQL',prof :'Beginner', desc:'Used for database management.'}];
     
     
     return(
@@ -36,6 +37,7 @@ function Items(){
             </section>
             <section id='Contact-Me' className={styles.section}>
                 <h1>Contact me</h1>
+                <ContactMe/>
             </section>
         </div>
     )

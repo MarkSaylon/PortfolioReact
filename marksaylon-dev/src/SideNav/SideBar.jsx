@@ -1,6 +1,7 @@
 import styles from './SideBar.module.css'
 import github from './github.svg'
 import linkedin from './linkedin.svg'
+import resume from './MSAYLON.pdf'
 import React, { useEffect, useState } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 
@@ -26,8 +27,13 @@ function SideBar(){
                     <h4 className={isScrolled ? styles.desc : styles.descStart}>Front End Developer | UI Designer</h4>
                     <p className={isScrolled ? '' : styles.beforeScroll}>I enjoy building interactive and beautiful websites.</p> 
                     <div  className={isScrolled ? styles.contactContainer : styles.beforeScroll}>
-                        <button className={styles.contactButton}>Contact Me</button>
-                        <button className={styles.resumeButton}>Resume</button>
+                        <Link smooth to = '#Contact-Me' style={{ textDecoration: 'none' }}><button className={styles.contactButton}>Contact Me</button></Link>
+                        <button className={styles.resumeButton} onClick={() => {
+                                const link = document.createElement('a');
+                                link.href = resume;
+                                link.download = "MSAYLON.pdf";
+                                link.click();
+                            }}>Resume</button>
                     </div>
                     <ul className={isScrolled ? styles.navButtons : styles.beforeScroll}>
                         <Link smooth to = '#About-Me' style={{ textDecoration: 'none' }} ><li><div className={styles.bullet}/>About Me</li></Link>

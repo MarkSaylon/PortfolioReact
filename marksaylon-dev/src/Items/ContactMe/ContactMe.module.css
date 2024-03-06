@@ -1,0 +1,15 @@
+.links {
+  padding: 10px;
+  background-color: var(--bgclr-light);
+  text-decoration: none;
+  font-family: var(--font-style);
+  transition: box-shadow 1s ease, transform 1s ease;
+}
+.links:hover {
+  box-shadow: 0 0 5px 1px var(--primary-lightshd);
+  transform: scale(1.02);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
